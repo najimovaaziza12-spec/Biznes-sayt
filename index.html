@@ -1,4 +1,4 @@
-[Ср 11.11.26 19:18] 🖤: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
@@ -54,7 +54,7 @@
         </div>
     </section>
 
-    <!-- Har xil yo'nalishdagi Namunalar (Demo Sahifalar) -->
+    <!-- Har xil yo'nalishdagi Namunalar -->
     <section class="services">
         <h2>Har Xil Yo‘nalishdagi Tayyor Namunalar</h2>
         <div class="card-container">
@@ -79,28 +79,28 @@
         </div>
     </section>
 
-    <!-- 1. INTERAKTIV NARX HISOBLAGICH (CALCULATOR) -->
+    <!-- INTERAKTIV NARX HISOBLAGICH (CALCULATOR) -->
     <section class="services" style="background: rgba(56, 189, 248, 0.03);">
         <h2>🧮 Sayt Narxini Hisoblash</h2>
         <p style="text-align: center; color: #94a3b8; margin-bottom: 20px;">O'zingizga kerakli xizmatlarni tanlang va taxminiy narxni bilib oling:</p>
         <div class="card-container" style="max-width: 600px; display: block; margin: 0 auto; text-align: left; background: #0b0f19; padding: 30px; border-radius: 16px; border: 1px solid #1e293b;">
-[Ср 11.11.26 19:18] 🖤: <label style="display: block; margin-bottom: 15px; color: #e2e8f0; cursor: pointer;">
-                <input type="checkbox" id="service1" value="100" onchange="calculatePrice()" style="margin-right: 10px; accent-color: #38bdf8;"> Vizitka Sayt (100$)
+ <label style="display: block; margin-bottom: 15px; color: #e2e8f0; cursor: pointer;">
+                <input type="checkbox" id="service1" value="100" onclick="calculatePrice()" style="margin-right: 10px; accent-color: #38bdf8; width: 18px; height: 18px;"> Vizitka Sayt (100$)
             </label>
             <label style="display: block; margin-bottom: 15px; color: #e2e8f0; cursor: pointer;">
-                <input type="checkbox" id="service2" value="150" onchange="calculatePrice()" style="margin-right: 10px; accent-color: #38bdf8;"> Telegram Bot (150$)
+                <input type="checkbox" id="service2" value="150" onclick="calculatePrice()" style="margin-right: 10px; accent-color: #38bdf8; width: 18px; height: 18px;"> Telegram Bot (150$)
             </label>
             <label style="display: block; margin-bottom: 20px; color: #e2e8f0; cursor: pointer;">
-                <input type="checkbox" id="service3" value="250" onchange="calculatePrice()" style="margin-right: 10px; accent-color: #38bdf8;"> Internet Do'kon (250$)
+                <input type="checkbox" id="service3" value="250" onclick="calculatePrice()" style="margin-right: 10px; accent-color: #38bdf8; width: 18px; height: 18px;"> Internet Do'kon (250$)
             </label>
             <div style="border-top: 1px solid #1e293b; padding-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-size: 18px; font-weight: bold;">Umumiy narx:</span>
+                <span style="font-size: 18px; font-weight: bold; color: #fff;">Umumiy narx:</span>
                 <span id="totalPrice" style="font-size: 24px; font-weight: bold; color: #38bdf8;">0 $</span>
             </div>
         </div>
     </section>
 
-    <!-- 2. LOYIHALAR PORTFELI (GALEREYA) -->
+    <!-- LOYIHALAR PORTFELI -->
     <section class="services">
         <h2>🎨 So‘nggi Bajarilgan Ishlarimiz</h2>
         <div class="card-container">
@@ -117,7 +117,7 @@
         </div>
     </section>
 
-    <!-- FAQ - Ko'p beriladigan savollar -->
+    <!-- FAQ -->
     <section class="services" style="background: rgba(255, 255, 255, 0.02);">
         <h2>Ko‘p Beriladigan Savollar</h2>
         <div class="card-container" style="max-width: 800px; display: block; margin: 0 auto; text-align: left;">
@@ -146,8 +146,8 @@
     <!-- Sharhlar -->
     <section class="services">
         <h2>Mijozlarimiz Fikri</h2>
-        <div class="card-container">
-[Ср 11.11.26 19:18] 🖤: <div class="card">
+ <div class="card-container">
+            <div class="card">
                 <h3>Azizbek M.</h3>
                 <p>"Restoranimiz uchun bot va sayt yasatdik. Buyurtmalar soni 2 baravar oshdi, ish o‘ta sifatli!"</p>
             </div>
@@ -166,7 +166,7 @@
         <p class="footer-copy">© 2026 AuraForge Studio. Barcha huquqlar himoyalangan.</p>
     </footer>
 
-    <!-- 3. POP-UP BUYURTMA BERISH OYNASI (MODAL) -->
+    <!-- POP-UP OYNA -->
     <div id="orderModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; justify-content: center; align-items: center;">
         <div style="background: #0f172a; padding: 30px; border-radius: 16px; width: 90%; max-width: 400px; border: 1px solid #334155; text-align: center; position: relative;">
             <h3 style="margin-bottom: 15px; color: #fff;">Buyurtma Berish</h3>
@@ -178,10 +178,10 @@
         </div>
     </div>
 
-    <!-- Doimiy turadigan Telegram tugmasi -->
+    <!-- Telegram Tugmasi -->
     <a href="https://t.me/Auraforge3D_Studio" target="_blank" style="position: fixed; bottom: 25px; right: 25px; background: #38bdf8; color: #0b0f19; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; text-decoration: none; box-shadow: 0 4px 20px rgba(56,189,248,0.5); z-index: 1000; font-weight: bold;">💬</a>
 
-    <!-- JAVASCRIPT: Kalkulyator va Pop-up funksiyalari -->
+    <!-- SCRIPT -->
     <script>
         function calculatePrice() {
             let total = 0;
