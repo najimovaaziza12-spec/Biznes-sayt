@@ -1,4 +1,4 @@
-[Ср 11.11.26 18:32] 🖤: <!DOCTYPE html>
+[Ср 11.11.26 19:18] 🖤: <!DOCTYPE html>
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
         <span class="badge">🔥 Premium IT Yechimlar</span>
         <h1>Biznesingizni Internetda Daromad keltiradigan Qiling!</h1>
         <p>Biznesingiz uchun zamonaviy saytlar, avtomatlashtirilgan Telegram botlar va professional dizayn yaratamiz.</p>
-        <a href="https://t.me/Auraforge3D_Studio" target="_blank" class="btn">Bepul Konsultatsiya Olish</a>
+        <button onclick="openModal()" class="btn">Bepul Konsultatsiya Olish</button>
     </header>
 
     <!-- Nega aynan biz? -->
@@ -54,7 +54,7 @@
         </div>
     </section>
 
-    <!-- Har xil yo'nalishdagi Namunalar -->
+    <!-- Har xil yo'nalishdagi Namunalar (Demo Sahifalar) -->
     <section class="services">
         <h2>Har Xil Yo‘nalishdagi Tayyor Namunalar</h2>
         <div class="card-container">
@@ -62,19 +62,76 @@
                 <span class="tag">Restoran / Kafe</span>
                 <h3>Milliy Taomlar Restorani</h3>
                 <p>Taomlar menyusi va yetkazib berishga buyurtma shakli bo‘lgan zamonaviy sayt.</p>
-                <a href="Restoran.html"  class="btn-small">Demoni ko‘rish →</a>
+                <a href="restoran.html" class="btn-small">Demoni ko‘rish →</a>
             </div>
             <div class="card demo-card">
                 <span class="tag">Kiyim Do‘koni</span>
                 <h3>Brend Clothing Shop</h3>
                 <p>Kiyimlar katalogi, razmerlar jadvali va Telegram’ga buyurtma yuborish.</p>
-                <a href="dokon.html"  class="btn-small">Demoni ko‘rish →</a>
+                <a href="dokon.html" class="btn-small">Demoni ko‘rish →</a>
             </div>
             <div class="card demo-card">
                 <span class="tag">O‘quv Markazi</span>
                 <h3>Future Learning Academy</h3>
                 <p>Kurslar ro‘yxati, narxlar va bepul darsga yozilish formasi.</p>
-                <a href="kurs.html"  class="btn-small">Demoni ko‘rish →</a>
+                <a href="kurs.html" class="btn-small">Demoni ko‘rish →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. INTERAKTIV NARX HISOBLAGICH (CALCULATOR) -->
+    <section class="services" style="background: rgba(56, 189, 248, 0.03);">
+        <h2>🧮 Sayt Narxini Hisoblash</h2>
+        <p style="text-align: center; color: #94a3b8; margin-bottom: 20px;">O'zingizga kerakli xizmatlarni tanlang va taxminiy narxni bilib oling:</p>
+        <div class="card-container" style="max-width: 600px; display: block; margin: 0 auto; text-align: left; background: #0b0f19; padding: 30px; border-radius: 16px; border: 1px solid #1e293b;">
+[Ср 11.11.26 19:18] 🖤: <label style="display: block; margin-bottom: 15px; color: #e2e8f0; cursor: pointer;">
+                <input type="checkbox" id="service1" value="100" onchange="calculatePrice()" style="margin-right: 10px; accent-color: #38bdf8;"> Vizitka Sayt (100$)
+            </label>
+            <label style="display: block; margin-bottom: 15px; color: #e2e8f0; cursor: pointer;">
+                <input type="checkbox" id="service2" value="150" onchange="calculatePrice()" style="margin-right: 10px; accent-color: #38bdf8;"> Telegram Bot (150$)
+            </label>
+            <label style="display: block; margin-bottom: 20px; color: #e2e8f0; cursor: pointer;">
+                <input type="checkbox" id="service3" value="250" onchange="calculatePrice()" style="margin-right: 10px; accent-color: #38bdf8;"> Internet Do'kon (250$)
+            </label>
+            <div style="border-top: 1px solid #1e293b; padding-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 18px; font-weight: bold;">Umumiy narx:</span>
+                <span id="totalPrice" style="font-size: 24px; font-weight: bold; color: #38bdf8;">0 $</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. LOYIHALAR PORTFELI (GALEREYA) -->
+    <section class="services">
+        <h2>🎨 So‘nggi Bajarilgan Ishlarimiz</h2>
+        <div class="card-container">
+            <div class="card" style="border: 1px solid #38bdf844;">
+                <h3>🌟 "Grand Resto" Sayti</h3>
+                <p>Toshkent shahridagi yirik restoran uchun online menyu va bron qilish platformasi.</p>
+                <span class="tag" style="background: rgba(56,189,248,0.1); color: #38bdf8; padding: 4px 10px; border-radius: 6px; font-size: 12px;">Web Development</span>
+            </div>
+            <div class="card" style="border: 1px solid #38bdf844;">
+                <h3>🌟 "FastDelivery" Bot</h3>
+                <p>Kuryerlik xizmati uchun avtomatlashgan zakaz qabul qiluvchi Telegram bot.</p>
+                <span class="tag" style="background: rgba(56,189,248,0.1); color: #38bdf8; padding: 4px 10px; border-radius: 6px; font-size: 12px;">Telegram Bot</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ - Ko'p beriladigan savollar -->
+    <section class="services" style="background: rgba(255, 255, 255, 0.02);">
+        <h2>Ko‘p Beriladigan Savollar</h2>
+        <div class="card-container" style="max-width: 800px; display: block; margin: 0 auto; text-align: left;">
+            <div class="card" style="width: 100%; margin-bottom: 15px;">
+                <h3>❓ Sayt qancha muddatda tayyor bo‘ladi?</h3>
+                <p>Buyurtma murakkabligiga qarab 1 kundan 3 kungacha bo‘lgan qisqa muddatda to‘liq topshiramiz.</p>
+            </div>
+            <div class="card" style="width: 100%; margin-bottom: 15px;">
+                <h3>❓ To‘lov qanday amalga oshiriladi?</h3>
+                <p>Oldindan 50% boshlang‘ich to‘lov, sayt to‘liq bitib, sizga yoqqanidan keyin qolgan 50% to‘lanadi.</p>
+            </div>
+            <div class="card" style="width: 100%;">
+                <h3>❓ Sayt topshirilgandan keyin yordam berasizmi?</h3>
+                <p>Albatta! 1 oy davomida saytingiz ishlashiga to‘liq kafolat beramiz va texnik yordam ko‘rsatamiz.</p>
             </div>
         </div>
     </section>
@@ -83,13 +140,14 @@
     <section class="promo">
         <h2>🔥 Maxsus Taklif!</h2>
         <p>Shu hafta buyurtma bering va 20% chegirma hamda bepul logotip dizayniga ega bo‘ling!</p>
-        <a href="https://t.me/Auraforge3D_Studio" target="_blank" class="btn btn-promo">Chegirma Bilan Buyurtma Berish</a>
+        <button onclick="openModal()" class="btn btn-promo">Chegirma Bilan Buyurtma Berish</button>
     </section>
-[Ср 11.11.26 18:32] 🖤: <!-- Sharhlar -->
-    <section class="services" style="background: rgba(255, 255, 255, 0.02);">
+
+    <!-- Sharhlar -->
+    <section class="services">
         <h2>Mijozlarimiz Fikri</h2>
         <div class="card-container">
-            <div class="card">
+[Ср 11.11.26 19:18] 🖤: <div class="card">
                 <h3>Azizbek M.</h3>
                 <p>"Restoranimiz uchun bot va sayt yasatdik. Buyurtmalar soni 2 baravar oshdi, ish o‘ta sifatli!"</p>
             </div>
@@ -107,6 +165,52 @@
         <p>Telegram: <a href="https://t.me/Auraforge3D_Studio" target="_blank" style="color: #38bdf8;">@Auraforge3D_Studio</a></p>
         <p class="footer-copy">© 2026 AuraForge Studio. Barcha huquqlar himoyalangan.</p>
     </footer>
+
+    <!-- 3. POP-UP BUYURTMA BERISH OYNASI (MODAL) -->
+    <div id="orderModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; justify-content: center; align-items: center;">
+        <div style="background: #0f172a; padding: 30px; border-radius: 16px; width: 90%; max-width: 400px; border: 1px solid #334155; text-align: center; position: relative;">
+            <h3 style="margin-bottom: 15px; color: #fff;">Buyurtma Berish</h3>
+            <p style="color: #94a3b8; font-size: 14px; margin-bottom: 20px;">Ma'lumotlaringizni qoldiring, siz bilan darhol bog'lanamiz:</p>
+            <input type="text" id="clientName" placeholder="Ismingiz" style="width: 100%; padding: 12px; margin-bottom: 12px; background: #0b0f19; border: 1px solid #334155; color: #fff; border-radius: 8px;">
+            <input type="text" id="clientPhone" placeholder="Telefon raqamingiz (+998 ...)" style="width: 100%; padding: 12px; margin-bottom: 20px; background: #0b0f19; border: 1px solid #334155; color: #fff; border-radius: 8px;">
+            <button onclick="sendToTelegram()" style="width: 100%; padding: 12px; background: #38bdf8; color: #0b0f19; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; margin-bottom: 10px;">Buyurtmani Yuborish</button>
+            <button onclick="closeModal()" style="background: transparent; color: #94a3b8; border: none; cursor: pointer; font-size: 14px;">Yopish</button>
+        </div>
+    </div>
+
+    <!-- Doimiy turadigan Telegram tugmasi -->
+    <a href="https://t.me/Auraforge3D_Studio" target="_blank" style="position: fixed; bottom: 25px; right: 25px; background: #38bdf8; color: #0b0f19; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; text-decoration: none; box-shadow: 0 4px 20px rgba(56,189,248,0.5); z-index: 1000; font-weight: bold;">💬</a>
+
+    <!-- JAVASCRIPT: Kalkulyator va Pop-up funksiyalari -->
+    <script>
+        function calculatePrice() {
+            let total = 0;
+            if (document.getElementById('service1').checked) total += 100;
+            if (document.getElementById('service2').checked) total += 150;
+            if (document.getElementById('service3').checked) total += 250;
+            document.getElementById('totalPrice').innerText = total + ' $';
+        }
+
+        function openModal() {
+            document.getElementById('orderModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('orderModal').style.display = 'none';
+        }
+
+        function sendToTelegram() {
+            let name = document.getElementById('clientName').value;
+            let phone = document.getElementById('clientPhone').value;
+            if(name === "" || phone === "") {
+                alert("Iltimos, Ism va Telefon raqamingizni kiriting!");
+                return;
+            }
+            let text = Yangi buyurtma!%0AIsm: ${name}%0ATelefon: ${phone};
+            window.open(https://t.me/Auraforge3D_Studio?text=${text}, '_blank');
+            closeModal();
+        }
+    </script>
 
 </body>
 </html>
